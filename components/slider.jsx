@@ -22,7 +22,7 @@ const Slider = () => {
       };
   return (
    
-    <div className='w-100 row p-0 m-0'>
+    <div className='w-100 row p-0 m-0 bg_linder_red pb-4'>
       <div className='col-lg-6 order-2 order-lg-1 d-flex justify-content-end p-0 m-0 py-4 py-lg-5'>
        <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
          <div className={`col-lg-9 col-md-7 col-9 px-1 m-0 scrool_animate ${animated && " animate"}`}>
@@ -30,7 +30,7 @@ const Slider = () => {
               A Decentralized Meme Token
               Evolved into a Vibrant Ecosystem 
             </div>
-            <Link className='p-4 px-5 button_slider' href={"/whitepaper"}>
+            <Link className='p-3  px-5 button_home ms-2 ms-sm-0' href={"/whitepaper"}>
                 WHITEPAPER
             </Link>
         </div>
