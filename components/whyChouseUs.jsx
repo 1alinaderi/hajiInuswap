@@ -44,13 +44,13 @@ const WhyChouseUs = () => {
     setAnimatedbox2(false);
   };
   return (
-    <div style={{overflow:"hidden"}} className='w-100 bg_light row justify-content-center p-0 m-0 py-5'>
+    <div style={{overflow:"hidden"}} className='w-100 bg_white row justify-content-center p-0 m-0 py-5'>
      <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
       <div className={`col-lg-5 col-md-6 col-sm-9 col-11 text-center text_why p-0 m-0 px-3 ${animated && " animate_center"}`}>
       New generation AMM DEX for existing and new projects on Binance Smart Chain (BSC), offering the best trading experience and better project support
       </div>
       <h1 className={`slider_title text-center pt-4 text-black ${animated && " animate_center"}`}>  
-        HajiInu Swap
+         HAJI INU
       </h1>
       </ScrollTrigger>
       <div className='col-lg-10 p-0 m-0 p-3 row justify-content-center'>
@@ -60,9 +60,9 @@ const WhyChouseUs = () => {
             </ScrollTrigger>
                
             </div>
-            <div className='col-lg-6 col-sm-10 col-11  p-md-5 text-white'>
+            <div className='col-lg-6 col-sm-10 col-12 px-0 p-md-5 text-white'>
             <ScrollTrigger onEnter={onEnterBox} onExit={onExitBox}>
-              <div className={`bg_light box_container_parrent p-4 ${animatedbox && " animate_center"}`}>
+              <div className={`box_container_parrent p-2 p-md-4 ${animatedbox && " animate_center"}`}>
               <div className={`box_container p-3 p-lg-4 `}>
                 <span className='box_title pb-3 d-flex justify-content-start align-items-center'>
                     <img className='me-2' style={{width:"45px"}} src='/logo.png'  />
@@ -84,10 +84,10 @@ const WhyChouseUs = () => {
             </div>
       </div>
       <div className='col-lg-10 p-0 m-0 px-1 px-md-3 py-3 row justify-content-center'>
-      <div className='col-lg-6 col-sm-10 col-11 order-2 order-md-1 p-md-5 text-white'>
+      <div className='col-lg-6 col-sm-10 col-12 order-2 order-md-1 p-md-5 text-white'>
             <ScrollTrigger onEnter={onEnterBox2} onExit={onExitBox2}>
-              <div className={`' w-100 p-4 bg_light box_container_parrent2  ${animatedbox2 && " animate_center"} '`}>
-              <div className={`box_container2 p-3 p-lg-4 `}>
+              <div className={`' w-100 p-3 p-md-4 box_container_parrent2  ${animatedbox2 && " animate_center"} '`}>
+              <div className={`box_container2 p-2 p-lg-4 `}>
                 <span className='box_title2 pb-3 d-flex justify-content-start align-items-center'>
                     <img className='me-2' style={{width:"45px" , height:"45px"}} src='/logo.png'  />
                     <b>Swap BNB for HAJIINU</b>

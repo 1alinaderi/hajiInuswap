@@ -10,7 +10,7 @@ const whitepaper = () => {
         <title>WhitePaper</title>
         <meta name="description" content="HajiInu Swap WhitePaper" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Header />
       <div className="w-100 p-0 m-0 row justify-content-center bg_light">
@@ -34,6 +34,7 @@ const whitepaper = () => {
             <br />
             HajiInu is the Future!
           </p>
+          <img className="col-12 col-lg-8 my-4 mx-auto" src="/white (1).png" />
 
           <p>
             <br />
@@ -69,6 +70,8 @@ const whitepaper = () => {
             Ethereum or Bitcoin.
           </p>
 
+
+
           <p>
             <br />
             <strong>Decentralized</strong>
@@ -96,39 +99,12 @@ const whitepaper = () => {
 
           <p>
             <br />
-            <strong>Earn HAJIINU via Yield Farms</strong>
-            <br />
-            Stake LP tokens to earn HAJIINU. You get LP tokens through staking
-            tokens in Liquidity Pools
-            <br />
-            (LPs).
-          </p>
-
-          <p>
-            <br />
-            <strong>Earn tokens via Pools</strong>
-            <br />
-            Stake HAJIINU to earn free tokens.
-          </p>
-
-          <p>
-            <br />
             <strong>Earn Trading Fees</strong>
             <br />
             Like other AMM decentralized exchanges, you can earn trading fees
             when you stake your
             <br />
             tokens in Liquidity Pools (LPs).
-          </p>
-
-          <p>
-            <br />
-            <strong>Growth Fund</strong>
-            <br />
-            0.05% trading fee will be used to buy back HAJIINU as a weekly
-            growth fund, rewarded to
-            <br />
-            winning projects.
           </p>
 
           <p>
@@ -143,56 +119,19 @@ const whitepaper = () => {
 
           <p>
             <br />
-            <strong>RoadMap</strong>
+            <strong>Tokenomic</strong>
             <br />
-            1. Swap: Trade mining, get free HajiInu Token on every trade
+            Total supply : 200,000,000,000,000,000
             <br />
-            2. Liquidity: Add tokens to liquidity pool and receive LP tokens
+            Liquidity : 75%
             <br />
-            3. Farms: Stake LP tokens, earn free HAJIINU Token
+            Farm : 12%
             <br />
-            4. Pools: Stake HAJIINU token, earn free tokens
+            Team : 8%
             <br />
-            5. Nesting: Get grants for your project from growth fund by
-            user&#39;s voting - vote by HAJIINU Token, fund
-            <br />
-            in Falcon Swaps Token
-            <br />
-            6. Grants: More funding methods for projects - use in HAJIINU
-            <br />
-            7. Governance: Participate in governance and vote on proposals -
-            vote by HAJIINU Token
-            <br />
-            8. Profile: Customize user profile with HAJIINU IP and make into NFT
-            - paid in HAJIINU
-            <br />
-            9. NFT Ecosystem: NFB, Marketplace, etc. Mint, stake and trade - use
-            with HAJIINU Token
-            <br />
-            10. IFO (Initial Farm Offering): Raise funds for your project in
-            HAJIINU Tokens -LP tokens. After redeeming
-            <br />
-            the LP tokens, the fund is distributed to the project, and the
-            HAJIINU Token is burned
-            <br/>
-            11. Multichain: Launch on
-            other blockchain and service more projects and users
-            <br />
-            12. Fixed interest rate for HAJIINU Token holders.
+            Marketing : 5%
           </p>
-
-          <p>
-            <br />
-            <strong>Stay Tuned</strong>
-            <br />
-            Join the OFFICIAL social media profiles of HajiInu
-            <br />
-            TG Chat:
-            <br />
-            News Channel:
-            <br />
-            Twitter:
-          </p>
+          <img className="col-12 col-lg-8 my-4 mx-auto" src="/white (3).png" />
 
           <p>
             <br />
@@ -235,10 +174,7 @@ const whitepaper = () => {
             <br />
             To get BEP20 tokens, we recommend the below ways:
             <br />
-            <a dir="auto" href="">
-              Binance.com
-            </a>
-            &nbsp;- You can withdraw tokens as BEP20 via your Binance account
+            Binance.com - You can withdraw tokens as BEP20 via your Binance account
             (if you have one).
             <br />
             Bear in mind you need an account to do so.
@@ -364,6 +300,7 @@ const whitepaper = () => {
             <br />
             Some special pools let you stake other tokens besides HAJIINU, too!
           </p>
+          <img className="col-12 col-lg-8 my-4 mx-auto" src="/white (4).png" />
 
           <p>
             <strong>NFT</strong>
@@ -458,16 +395,7 @@ const whitepaper = () => {
             The platforms that will be used for paid ads include Bing, Google,
             Twitter.
           </p>
-
-          <p>
-            <br />
-            <strong>Airdrop and Bounty Campaigns:</strong>
-            <br />
-            Airdrop and bounty campaigns are some of the best marketing
-            strategies for every crypto
-            <br />
-            project. Free tokens will be given out all through.
-          </p>
+          <img className="col-12 col-lg-8 my-4 mx-auto" src="/white (2).png" />
 
           <p>
             <br />

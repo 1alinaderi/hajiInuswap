@@ -93,8 +93,6 @@ a {
   font-size: 23px;
   }
   font-weight: 800;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .logo_fixed_size {
   max-width: 80px;
@@ -178,15 +176,16 @@ a {
   }
 }
 .box_container {
-  background: rgb(147,31,186);  
-  background: radial-gradient(circle, rgba(147,31,186,1) 0%, rgba(42,8,69,1) 80%);
+  background: #412CB4;
 }
 .box_container_parrent {
+  background: #412CB4;
   transition: all 1.5s;
   border-radius: 25px;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.47);
 }
 .box_container_parrent2 {
+  background: #412CB4;
   transition: all 1.5s;
   border-radius: 25px;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.47);
@@ -200,8 +199,7 @@ a {
   transition: all 1.5s;
 }
 .box_container2 {
-  background: #931fba;  
-  background: radial-gradient(circle, rgba(147,31,186,1) 0%, rgba(42,8,69,1) 80%);
+  background: #412CB4;
 }
 .box_title {
   font-size: 27px;
@@ -291,15 +289,18 @@ a {
   }
 }
 .button_home {
-  background: #931fba; 
-  background: linear-gradient(to right, #2a0845, #931fba);
-  border-radius: 4px;
+  background: #0b2dda; 
+  border-radius: 50px;
   color: #fff;
+  border: 1px solid #0b2dda;
   transition: 0.3s;
   text-decoration: none !important;
   font-size: 18px;
   letter-spacing: 1px;
-  font-weight: 900;
+  font-weight: 600;
+  &:hover {
+    opacity: .9;
+  }
   
 }
 .bg_linder_red {
@@ -311,35 +312,34 @@ a {
   );
 }
 .bg_light {
-  background: #faf7e2;
+  background: #efcd9b ;
 }
 .text-black {
   color: #000 !important;
 }
 .bg_dark {
-  background: rgb(147,31,186);  
-  background: radial-gradient(circle, rgba(147,31,186,1) 0%, rgba(42,8,69,1) 80%);
+  background: #412CB4;
 }
 
 .box_container_token {
   transition: all 1.5s;
-  background-color: #931fba;
+  background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.47);
   div {
     border-radius: 50%;
-    background-color: #22242e;
+    background-color: #412CB4;
   }
   span {
     @include mobile {
-      font-size: 18px;
+      font-size: 17px;
     }
     font-size: 24px;
   }
 }
 
 .icon_bg {
-  background-color: #931fba;
+  background-color: #412CB4;
   border-radius: 50%;
   width: 40px;
   height: 40px;

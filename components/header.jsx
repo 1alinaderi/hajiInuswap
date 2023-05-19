@@ -13,8 +13,8 @@ const Header = () => {
                 <img src="/logo.png" className='logo_fixed_size p-2'/>
             </span>
             <span className='logo_text'>
-                HajiInu Swap
-            </span>
+              HAJI INU
+             </span>
             </Link>
         </div>
         <div className='col-4 d-flex justify-content-end  d-lg-none'>
@@ -24,28 +24,28 @@ const Header = () => {
             <div className='w-100 d-flex justify-content-end'>
                 <FaTimes onClick={()=>{setShow(false)}} size={20} />
             </div>
-            <div className='w-100 d-flex flex-column pe-5'>
+            <div onClick={()=>setShow(false)} className='w-100 d-flex flex-column pe-5'>
             <Link className="pt-2 pe-4 text-black" href="/">
                 <span className='nav_link'>
                     Home
                 </span>
             </Link>
-            <Link className="pt-2 pe-4 text-black" href="#swap">
+            <Link className="pt-2 pe-4 text-black" href="/#swap">
                 <span className='nav_link'>
                     Swap
                 </span>
             </Link>
-            <Link className="pt-2 pe-4 text-black" href="#white">
+            <Link className="pt-2 pe-4 text-black" href="/whitepaper">
                 <span className='nav_link'>
                     Whitepaper
                 </span>
             </Link>
-            <Link className="pt-2 pe-4 text-black" href="#token">
+            <Link className="pt-2 pe-4 text-black" href="/#token">
                 <span className='nav_link'>
                     Tokenomics
                 </span>
             </Link>
-            <Link className="pt-2 pe-4 text-black" href="#about">
+            <Link className="pt-2 pe-4 text-black" href="/#about">
                 <span className='nav_link'>
                 About
                 </span>
@@ -56,28 +56,28 @@ const Header = () => {
            </div>
            )}
         </div>
-        <div className='d-none d-lg-block col-lg-6 p-0 m-0 '>
+        <div onClick={()=>setShow(false)} className='d-none d-lg-block col-lg-6 p-0 m-0 '>
             <Link className="px-4" href="/">
                 <span className='nav_link'>
                     Home
                 </span>
             </Link>
-            <Link className="px-4" href="#swap">
+            <Link className="px-4" href="/#swap">
                 <span className='nav_link'>
                     Swap
                 </span>
             </Link>
-            <Link className="px-4" href="#white">
+            <Link className="px-4" href="/whitepaper">
                 <span className='nav_link'>
                     Whitepaper
                 </span>
             </Link>
-            <Link className="px-4" href="#token">
+            <Link className="px-4" href="/#token">
                 <span className='nav_link'>
                     Tokenomics
                 </span>
             </Link>
-            <Link className="px-4" href="#about">
+            <Link className="px-4" href="/#about">
                 <span className='nav_link'>
                 About
                 </span>

@@ -33,7 +33,7 @@ const Slider = () => {
               A Decentralized Meme Token Evolved into a Vibrant Ecosystem
             </div>
             <Link
-              className="p-3  px-5 button_home ms-2 ms-sm-0"
+              className="p-3  px-4  button_home ms-2 ms-sm-0"
               href={"/whitepaper"}
             >
               WHITEPAPER
@@ -44,7 +44,6 @@ const Slider = () => {
       <div className="col-lg-6  order-1 order-lg-2 d-flex justify-content-center p-0 m-0 pe-lg-5">
         <ScrollTrigger onEnter={onEnterimg} onExit={onExitimg}>
           <img
-            
             src="/slider.png"
             className={`slider_image me-lg-5 scrool_animate_img ${
               animatedimg && " animate_img"

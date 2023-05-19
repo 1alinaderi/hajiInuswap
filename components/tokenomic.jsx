@@ -58,27 +58,22 @@ const Tokenomic = () => {
             <div className='col-lg-6 col-sm-10 col-12  p-md-5 text-white'>
             <ScrollTrigger onEnter={onEnterBox} onExit={onExitBox}>
               <div  className={` box_container_token p-3 ${animatedbox && " animate_center"}`}>
-                <div className='w-100 p-4'>
-                    <h2 className='text-center py-3 '>Total Supply <br/> 3,000,000,000</h2>
+                <div className='w-100 p-4 py-5'>
+                    <h2 className='text-center py-3 '>Total Supply <br/><span>200,000,000,000,000,000</span> </h2>
                     <span className='w-100 d-flex py-3'>
                         <span className='col-6 text-center '>
-                          Farm : 16%
+                          Farm : 12%
                         </span>
                         <span className='col-6 text-center'>
-                        Liquidity : 65%
+                        Liquidity : 75%
                         </span>
                     </span>
                     <span className='w-100 d-flex py-3'>
                         <span className='col-6 text-center'>
-                        Goverance : 10%
+                        Team : 8%
                         </span>
                         <span className='col-6 text-center'>
-                        Marketing : 4%
-                        </span>
-                    </span>
-                    <span className='w-100 d-flex py-3'>
-                        <span className='col-12 text-center'>
-                        Team : 7%
+                        Marketing : 5%
                         </span>
                     </span>
 
