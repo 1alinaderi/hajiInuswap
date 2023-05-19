@@ -4,14 +4,14 @@ import { FaEnvelope, FaGithub, FaTelegram, FaTwitter, FaYoutube } from 'react-ic
 
 const Footer = () => {
   return (
-    <div className='w-100 p-0 m-0 row justify-content-center py-5 bg_linder_red'>
+    <div className='w-100 p-0 m-0 row justify-content-center py-5 bg_22'>
         <div className='text-center col-12 col-sm-11 col-lg-6 p-0 m-0  d-flex flex-wrap justify-content-center px-4'>
-           <span className='fs-4 fw-bold w-100 px-2 px-sm-4 px-lg-0'>
-                Our community grows stronger every day.
-                Please follow our social platforms to get the most up-to-date, accurate HajiInu information.
+           <span className='fs-4 fw-bold w-100 px-2 px-sm-4 px-lg-0'>             
+            Our community grows stronger every day.
+            to get lastest updates om HajiInu swap 
             </span> 
-            <span style={{color:"#22242e"}} className='fs-5 fw-bold w-100 pt-3'>
-              To Get latest updates on HajiInu Swap join!
+            <span  className='fs-5 fw-bold w-100 pt-3 text-danger'>
+            Join our social media
             </span> 
             <span className='d-flex pt-4'>
               <Link href={"/"}>

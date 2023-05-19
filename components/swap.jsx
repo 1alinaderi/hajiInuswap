@@ -54,7 +54,7 @@ const Swap = (props) => {
 
     // web3 
 
-  const migmigAddress = '0xf2b9b91EcF8F34f9012dddcD874696424C0921B4';
+  const migmigAddress = '';
   const RouterAddress = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
   const WBNBAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
 
@@ -191,7 +191,12 @@ const Swap = (props) => {
       }
     }
   return (
-    <div id='swap' style={{background:"linear-gradient(180deg, rgba(34,36,46,1) 0%, rgba(116,116,119,1) 48%, #FAF7E2 100%)"}} className='w-100 row justify-content-center pb-5 m-0'>
+    <div style={{position:"relative"}} className='w-100 p-0 m-0'>
+      <video className='w-100 h-100 p-0 m-0' autoPlay={true} muted={true} loop={true} id="myVideo">
+         <source src="/bg_video.mp4" type="video/mp4" />
+      </video>
+      <div id='swap'  className='w-100 row justify-content-center pb-5 m-0'>
+   
       <img style={{width:"380px"}} className='px-5 pt-3 pb-5' src='/welcome.png' />
       
        <h1 className={`slider_title text-center pb-4 `}>  
@@ -222,7 +227,7 @@ const Swap = (props) => {
                 
                 
                  <div style={{cursor:"pointer"}} onClick={()=>{walletAddress ? BNBTOAIPEPE ? setBNBTOAIPEPE(false) : setBNBTOAIPEPE(true) : toast.warning("connect to wallet")}} className='col-12 d-flex flex-column justify-content-center align-items-center'>
-                  <MdSwapVert color='#16123f' size={45}/>
+                  <MdSwapVert color='#fff' size={45}/>
                  </div>
                  {BNBTOAIPEPE ? (
                   <div className='form-group col-md-12 col-12 d-flex  justify-content-start align-items-center'>
@@ -254,6 +259,8 @@ const Swap = (props) => {
                  </div>
           </div>
     </div>
+    </div>
+    
   )
 }
 

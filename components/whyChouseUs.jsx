@@ -65,14 +65,14 @@ const WhyChouseUs = () => {
               <div className={`bg_light box_container_parrent p-4 ${animatedbox && " animate_center"}`}>
               <div className={`box_container p-3 p-lg-4 `}>
                 <span className='box_title pb-3 d-flex justify-content-start align-items-center'>
-                    <img className='me-2' style={{width:"45px"}} src='favicon.ico'  />
-                    How To Buy
+                    <img className='me-2' style={{width:"45px"}} src='/logo.png'  />
+                   <b> How To Buy</b>
                 </span>
                 <p className=' text-white '>
                 To invest in DeFi, first, get the tokens you need from Binance Smart Chain. You will need BNB (BEP20) to be able to buy. Then you need a wallet with a dapp browser to be able to trade tokens in HajiInu Swaps. Wallets endorsed are Trust Wallet for mobile and Metamask for desktop. Once you have the tokens and the wallet, you can venture safely into the HajiInu Swaps ecosystem.
                 </p>
-                <p style={{color:"#f40000"}} className='fs-5 pt-3'>QUICK START GUIDE</p>
-                <p style={{color:"orange"}}>Create MetaMask wallet</p>
+                <p style={{color:"#f40000" , fontWeight:"900"}} className='fs-3 pt-3'>QUICK START GUIDE</p>
+                <p style={{color:"orange" , fontWeight:"900"}}>Create MetaMask wallet</p>
                 <p>Register on Mata Mask Wallet through app or browser</p>
                 <p>Send BNB to your wallet</p>
                 <p>Connect your wallet to Pancakeswap Browse your Metamask wallet and connect it with <a href='https://pancakeswap.finance'>Pancakeswap.finance</a> </p>
@@ -89,8 +89,8 @@ const WhyChouseUs = () => {
               <div className={`' w-100 p-4 bg_light box_container_parrent2  ${animatedbox2 && " animate_center"} '`}>
               <div className={`box_container2 p-3 p-lg-4 `}>
                 <span className='box_title2 pb-3 d-flex justify-content-start align-items-center'>
-                    <img className='me-2' style={{width:"45px" , height:"45px"}} src='favicon.ico'  />
-                    Swap BNB for HAJIINU
+                    <img className='me-2' style={{width:"45px" , height:"45px"}} src='/logo.png'  />
+                    <b>Swap BNB for HAJIINU</b>
                 </span>
                 <p className=' text-white '>
                 Now go to trade and exchange BNB to $HAJIINU
