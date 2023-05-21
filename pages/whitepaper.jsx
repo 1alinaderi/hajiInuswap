@@ -119,7 +119,7 @@ const whitepaper = () => {
 
           <p>
             <br />
-            <strong>Tokenomic</strong>
+            <strong>Tokenomics</strong>
             <br />
             Total supply : 200,000,000,000,000,000
             <br />

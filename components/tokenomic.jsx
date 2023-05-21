@@ -47,7 +47,7 @@ const Tokenomic = () => {
     <div id='token' className='w-100 bg_light p-0 m-0 row justify-content-center align-items-center py-3'>
           <div className='col-lg-10 p-0 m-0 p-3 row justify-content-center align-items-center'>
             <div className='w-100 text-center slider_title pb-4'>
-                Tokenomic
+                Tokenomics
             </div>
             <div className='col-lg-6 col-sm-10 p-1 pm-md-4 mb-5 mb-md-0'>
             <ScrollTrigger onEnter={onEnterimg} onExit={onExitimg}>
