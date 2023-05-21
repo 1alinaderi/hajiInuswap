@@ -35,7 +35,7 @@ const Footer = () => {
               <FaTelegram />
             </span>
           </Link>
-          <Link href={"malito:info@hajiinu.com"}>
+          <Link href={"mailto:info@hajiinu.com"}>
             <span className="mx-1 icon_bg">
               <FaEnvelope />
             </span>
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <div className="w-100 p-0 m-0 text-center pt-3">
         <a
-          href="malito:info@hajiinu.com"
+          href="mailto:info@hajiinu.com"
         >
           info@hajiinu.com
         </a>

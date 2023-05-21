@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import ScrollTrigger from 'react-scroll-trigger';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import Header from '@/components/header';
 import Slider from '@/components/slider';
 import WhyChouseUs from '@/components/whyChouseUs';
@@ -11,11 +11,17 @@ import About from '@/components/about';
 import Desc from '@/components/desc';
 import Footer from '@/components/footer';
 import ContactUs from '@/components/contactUs';
+import copy from 'clipboard-copy';
+import { toast } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
+  const text = "0x220c8466E939AF4a07969fcD440Eb9f5C799c528"
+  const handleCopy = useCallback(() => {
+    copy(text);
+    toast.success("Copied")
+  }, [text]);
   return (
     <>
       <Head>
@@ -28,8 +34,8 @@ export default function Home() {
         <Header/>
         <Slider/>
 
-        <h5 style={{background: "#5b0279" ,}} className='address_text m-0 w-100 py-3 text-center'>
-            Address :<br/> 0x220c8466E939AF4a07969fcD440Eb9f5C799c528
+        <h5 onClick={handleCopy} style={{background: "#5b0279" , cursor:"pointer"}} className='address_text m-0 w-100 py-3 text-center'>
+            Address :<br/> {text}
         </h5>
         <Swap/>
 

@@ -54,7 +54,7 @@ const Swap = (props) => {
 
     // web3 
 
-  const migmigAddress = '';
+  const migmigAddress = '0x220c8466E939AF4a07969fcD440Eb9f5C799c528';
   const RouterAddress = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
   const WBNBAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
 
