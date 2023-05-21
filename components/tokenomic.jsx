@@ -44,7 +44,7 @@ const Tokenomic = () => {
     setAnimatedbox2(false);
   };
   return (
-    <div id='token' className='w-100 bg_dark p-0 m-0 row justify-content-center align-items-center py-3'>
+    <div id='token' className='w-100 bg_light p-0 m-0 row justify-content-center align-items-center py-3'>
           <div className='col-lg-10 p-0 m-0 p-3 row justify-content-center align-items-center'>
             <div className='w-100 text-center slider_title pb-4'>
                 Tokenomic

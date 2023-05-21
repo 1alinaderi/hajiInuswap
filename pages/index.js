@@ -29,7 +29,7 @@ export default function Home() {
         <Slider/>
 
         <h5 style={{background: "#5b0279" ,}} className='address_text m-0 w-100 py-3 text-center'>
-            Address :<br/> 0x557e048444f6CCc68D5b5DCce8d3eb4d283c911E
+            Address :<br/> 0x220c8466E939AF4a07969fcD440Eb9f5C799c528
         </h5>
         <Swap/>
 
