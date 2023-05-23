@@ -68,7 +68,7 @@ const About = () => {
           <div className={`col-lg-12 transition_all col-12 p-0 m-0 py-1 px-4 ${animatedbox && " animate_center"}`}>
                 <div className='w-100 p-0 m-0 pb-4 d-flex justify-content-center flex-wrap flex-column align-items-center'>
                 <h3 className='text-center pb-4'><b>BUY  ON EXCHANGE </b></h3>
-                <Link href="/">
+                <Link href="https://pancakeswap.finance/swap?outputCurrency=0x297A453293505b19c7A1EdA5E039268da06a1D58&inputCurrency=BNB">
                 <img style={{width:"100px"}}  src='/pancake.png' />
                 </Link>
                 </div>

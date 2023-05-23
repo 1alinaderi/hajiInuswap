@@ -16,8 +16,9 @@ import { toast } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
-  const text = "0x220c8466E939AF4a07969fcD440Eb9f5C799c528"
+export default function Home(props) {
+  const {ethereumClient} = props
+  const text = "0x297A453293505b19c7A1EdA5E039268da06a1D58"
   const handleCopy = useCallback(() => {
     copy(text);
     toast.success("Copied")
@@ -37,7 +38,7 @@ export default function Home() {
         <h5 onClick={handleCopy} style={{background: "#5b0279" , cursor:"pointer"}} className='address_text m-0 w-100 py-3 text-center'>
             Address :<br/> {text}
         </h5>
-        <Swap/>
+        <Swap ethereumClient={ethereumClient}/>
 
       
         <WhyChouseUs/>
