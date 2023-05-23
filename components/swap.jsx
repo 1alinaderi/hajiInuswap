@@ -23,33 +23,6 @@ const Swap = (props) => {
   const { setDefaultChain } = useWeb3Modal();
   const web3 = new Web3(Web3.givenProvider);
 
-  const onEnterViewport = () => {
-    setAnimated(true);
-  };
-  const onEnterViewport2 = () => {
-    setAnimated2(true);
-  };
-
-  const onExitViewport = () => {
-    setAnimated(false);
-  };
-  const onExitViewport2 = () => {
-    setAnimated(false);
-  };
-  const onEnterimg = () => {
-    setAnimatedimg(true);
-  };
-  const onEnterimg2 = () => {
-    setAnimatedimg2(true);
-  };
-
-  const onExitimg = () => {
-    setAnimatedimg(false);
-  };
-  const onExitimg2 = () => {
-    setAnimatedimg2(false);
-  };
-
   // web3
 
   const migmigAddress = "0x297A453293505b19c7A1EdA5E039268da06a1D58";
@@ -66,24 +39,24 @@ const Swap = (props) => {
     setWalletAddress(ethereumClient?.getAccount()?.address);
     setDefaultChain(bsc);
   }, [ethereumClient?.getAccount()?.address]);
-  useEffect(
-    (e) => {
-      async function setapprov() {
-        if (walletAddress) {
-          const currentAllowance = await Aipepecontract?.methods
-            ?.allowance(walletAddress, RouterAddress)
-            ?.call();
-          if (currentAllowance > migmigeinput * 1000000000) {
-            setisapproved(true);
-          } else {
-            setisapproved(false);
-          }
-        }
-      }
-      setapprov();
-    },
-    [migmigeinput]
-  );
+  // useEffect(
+  //   (e) => {
+  //     async function setapprov() {
+  //       if (walletAddress) {
+  //         const currentAllowance = await Aipepecontract?.methods
+  //           ?.allowance(walletAddress, RouterAddress)
+  //           ?.call();
+  //         if (currentAllowance > (migmigeinput * 1000000000)) {
+  //           setisapproved(true);
+  //         } else {
+  //           setisapproved(false);
+  //         }
+  //       }
+  //     }
+  //     setapprov();
+  //   },
+  //   [migmigeinput]
+  // );
   useEffect(() => {
     const sellAmount = 10 ** 18; // 100 DAI = 10^20 wei
     const sellAmountaipepe = 10 ** 9; // 100 DAI = 10^20 wei
@@ -109,10 +82,7 @@ const Swap = (props) => {
     const gasPrice = await web3.eth.getGasPrice();
     const gas = await Routercontract?.methods
       ?.swapExactETHForTokens(
-        (
-          (BNBinput * price - (BNBinput * price) / 100) *
-          1000000000
-        ).toLocaleString(undefined, { useGrouping: false }),
+        0,
         [WBNBAddress, migmigAddress],
         walletAddress,
         Math.floor(Date.now() / 1000) + 60 * 10
@@ -130,10 +100,7 @@ const Swap = (props) => {
 
     await Routercontract?.methods
       ?.swapExactETHForTokens(
-        (
-          (BNBinput * price - (BNBinput * price) / 100) *
-          1000000000
-        ).toLocaleString(undefined, { useGrouping: false }),
+        0,
         [WBNBAddress, migmigAddress],
         walletAddress,
         Math.floor(Date.now() / 1000) + 60 * 10
@@ -152,13 +119,12 @@ const Swap = (props) => {
         toast.error(e.message);
       });
   }
-  console.log();
   async function _AipepeToBNB() {
     // Perform the swap.
     const currentAllowance = await Aipepecontract?.methods
       ?.allowance(walletAddress, RouterAddress)
       ?.call();
-    if (currentAllowance < migmigeinput * 1000000000) {
+    if (currentAllowance < (migmigeinput * 1000000000)) {
       const newAllowance = new web3.utils.BN("2")
         ?.pow(new web3.utils.BN("256"))
         ?.sub(new web3.utils.BN("1"));
@@ -180,13 +146,7 @@ const Swap = (props) => {
     const gas = await Routercontract?.methods
       ?.swapExactTokensForETH(
         (migmigeinput * 1000000000).toFixed(),
-
-        (
-          (migmigeinput * pricemigmig - (migmigeinput * pricemigmig) / 100) *
-          1000000000000000000
-        )
-          .toFixed()
-          .toLocaleString(undefined, { useGrouping: false }),
+        0,
         [migmigAddress, WBNBAddress],
         walletAddress,
         Math.floor(Date.now() / 1000) + 60 * 5
@@ -198,13 +158,7 @@ const Swap = (props) => {
       await Routercontract?.methods
         ?.swapExactTokensForETH(
           (migmigeinput * 1000000000).toFixed(),
-
-          (
-            (migmigeinput * pricemigmig - (migmigeinput * pricemigmig) / 100) *
-            1000000000000000000
-          )
-            .toFixed()
-            .toLocaleString(undefined, { useGrouping: false }),
+          0,
           [migmigAddress, WBNBAddress],
           walletAddress,
           Math.floor(Date.now() / 1000) + 60 * 5
